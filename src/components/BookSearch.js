@@ -4,6 +4,57 @@ import * as BooksAPI from '../BooksAPI'
 import Book from './Book.js'
 
 class BookSearch extends React.Component {
+  state = {
+		query: '',
+		searchedBooks: []
+	}
+
+	updateQuery = (query) => {
+		this.setState({
+			query: query
+		})
+
+		this.collectSearchedBooks(query)
+	}
+
+	collectSearchedBooks = (query) => {
+		if (query) {
+			BooksAPI.search(query).then((searchResult) => {
+				if (searchResult.error) {
+					this.setState({ searchedBooks: [] })
+				} else {
+					this.setState({ searchedBooks: searchResult })
+				}
+			})
+		} else {
+			this.setState({ searchedBooks: [] })
+		}
+	}
+
+  render() {
+		const createSearchedBooksContainer = (searchedBook) => {
+			let bookShelf = 'none'
+
+			const compareBooks = (book) => {
+				if (book.id === searchedBook.id) {
+					bookShelf = book.shelf
+				}
+			}
+
+			this.props.myBooks.forEach(compareBooks)
+
+			return (
+				<Book
+					key={searchedBook.id}
+					book={searchedBook}
+					changeShelf={this.props.changeShelf}
+					currentShelf={bookShelf}
+				/>
+			)
+		}
+
+		let searchedBookContainers = this.state.searchedBooks.map(createSearchedBooksContainer)
+
   render() {
     return (
 			<div className="search-books">
@@ -21,11 +72,18 @@ class BookSearch extends React.Component {
 				      // However, remember that the BooksAPI.search method DOES search by title or author. So, don't worry if
 				      // you don't find a specific author or title. Every search is limited by search terms.
 				    }
-				    <input type="text" placeholder="Search by title or author"/>
+				    <input
+              type="text"
+              placeholder="Search by title or author"
+              value={this.state.qeury}
+              onChange={(event) => this.updateQuery(event.target.value)}
+            />
 				  </div>
 				</div>
 				<div className="search-books-results">
-				  <ol className="books-grid"></ol>
+				  <ol className="books-grid">
+            {searchedBookContainers}
+          </ol>
 				</div>
 			</div>
 		)
