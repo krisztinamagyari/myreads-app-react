@@ -54,8 +54,7 @@ class BookSearch extends React.Component {
 		}
 
 		let searchedBookContainers = this.state.searchedBooks.map(createSearchedBooksContainer)
-
-  render() {
+  
     return (
 			<div className="search-books">
 				<div className="search-books-bar">
