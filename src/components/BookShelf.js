@@ -2,8 +2,8 @@ import React from 'react'
 import Book from './Book.js'
 
 
-class Bookshelf extends React.Component {
-  render () {
+class BookShelf extends React.Component {
+  render() {
 
     const createBookContainer = (book) => (
 			<Book

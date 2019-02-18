@@ -12,19 +12,19 @@ class BookList extends React.Component {
         </div>
         <div className="list-books-content">
           <div>
-            <Bookshelf
+            <BookShelf
               books={this.props.currentlyReadingBooks}
               shelfTitle='Currently Reading'
               shelfCode='currentlyReading'
               changeShelf={this.props.changeShelf}
             />
-            <Bookshelf
+            <BookShelf
               books={this.props.wantToReadBooks}
               shelfTitle='Want to Read'
               shelfCode='wantToRead'
               changeShelf={this.props.changeShelf}
             />
-            <Bookshelf
+            <BookShelf
               books={this.props.readBooks}
               shelfTitle='Read'
               shelfCode='read'
