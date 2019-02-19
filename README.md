@@ -4,9 +4,8 @@
 The project has been created as part of Udacity's Frontend Web Developer Nanodegree course. I was given a [starter code from Udacity](https://github.com/udacity/reactnd-project-myreads-starter) to create a bookshelf application that allows users to select and categorize books in 3 categories: read, currently reading, want to read. The project's aim was using React to build the application, adding interactivity to the original static template.
 
 ##Screenshots
-
-![Main page with the 3 shelves](images/screenshot_shelfpage.png)
-![Search page with searching for Drama](images/screenshot_searchpage.png)
+![Main page with the 3 shelves](src/images/screenshot2.png)
+![Search page with searching for Drama](src/images/screenshot1.png)
 
 ## Prerequisites
 * [nmp](https://www.npmjs.com/)
@@ -32,8 +31,12 @@ Udacity provided a backend server to develop against. The provided file [`BooksA
 ## Important
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
-## Create React App
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+## Resources used to create the application
+* Starter code provided by [Udacity](https://github.com/udacity/reactnd-project-myreads-starter)
+* This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
+* Study session by [Doug Brown](https://www.youtube.com/watch?v=OcL7-7cRpkQ&feature=youtu.be)
+* [React documentation](https://reactjs.org/)
+* Slack channel of fellow Udacity students
 
 ## Licences
 The content of this repository is free and is licensed under a [MIT License](https://choosealicense.com/licenses/mit/).
