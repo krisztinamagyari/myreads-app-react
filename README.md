@@ -4,8 +4,9 @@
 The project has been created as part of Udacity's Frontend Web Developer Nanodegree course. I was given a [starter code from Udacity](https://github.com/udacity/reactnd-project-myreads-starter) to create a bookshelf application that allows users to select and categorize books in 3 categories: read, currently reading, want to read. The project's aim was using React to build the application, adding interactivity to the original static template.
 
 ##Screenshots
-![Main page with the 3 shelves](./images/screenshot_shelfpage)
-![Search page with searching for Drama](./images/screenshot_searchpage)
+
+![Main page with the 3 shelves](./images/screenshot_shelfpage.png)
+![Search page with searching for Drama](./images/screenshot_searchpage.png)
 
 ## Prerequisites
 * [nmp](https://www.npmjs.com/)
