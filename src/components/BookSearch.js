@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import * as BooksAPI from '../BooksAPI'
-import Book from './Book.js'
+import Book from './Book'
 
 class BookSearch extends React.Component {
   state = {
@@ -54,7 +54,7 @@ class BookSearch extends React.Component {
 		}
 
 		let searchedBookContainers = this.state.searchedBooks.map(createSearchedBooksContainer)
-  
+
     return (
 			<div className="search-books">
 				<div className="search-books-bar">
