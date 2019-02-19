@@ -5,8 +5,8 @@ The project has been created as part of Udacity's Frontend Web Developer Nanodeg
 
 ##Screenshots
 
-![Main page with the 3 shelves](./images/screenshot_shelfpage.png)
-![Search page with searching for Drama](./images/screenshot_searchpage.png)
+![Main page with the 3 shelves](images/screenshot_shelfpage.png)
+![Search page with searching for Drama](images/screenshot_searchpage.png)
 
 ## Prerequisites
 * [nmp](https://www.npmjs.com/)
@@ -35,5 +35,9 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 ## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+## Licences
+The content of this repository is free and is licensed under a [MIT License](https://choosealicense.com/licenses/mit/).
+
 ## Contributing
+This repository is my personal project developed during Udacity's Front-end Web Developer Nanodegree Program. I appreciate any useful tips.
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
